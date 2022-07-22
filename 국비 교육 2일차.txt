@@ -33,7 +33,7 @@ Stack : Stack은 컴퓨터가 관여 할 수 있는데 Stack에 변수를 저장
 Heap : heap 영역은 주소값을 저장하고있음
 
 모든 Class는 참조자료형이다
- 
+
 8bit = 1byte
 
 char는 음수가 없다 0~65535(유니코드문자) 
@@ -127,3 +127,11 @@ byte -> short, char -> int -> long -> float -> double             ex) int a = 12
 		                                System.out.printf("%s? %s. 친하게 지내요.", str1, str2);   -> 안녕하세요? 반갑습니다. 친하게 
                                                 지내요.
 
+Scanner : 사용자로부터 입력되는 정수, 실수, 문자열을 처리하는 클래스
+             ex)   import 작성  -> import java.util.Scanner;
+                   Scanner 생성 -> Scanner sc = new Scanner(System.in);
+                   키보드 입력 값 받기    정수 : sc.nextInt();
+                                               실수 : sc.nextFloat();, sc.nextDouble();
+                                               문자열 : sc.next();, sc.nextLine();
+next()는 띄어쓰기 입력불가, 띄어쓰기를 구분인자로 생각하여 각각 저장, 줄 구분까지 저장하지 않음
+nextLine()은 문자열에 띄어쓰기 가능, 줄 구분까지 저장
